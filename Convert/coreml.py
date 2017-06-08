@@ -12,7 +12,7 @@
 import coremltools
 
 # Note: It appears that coremltools applies the scale *before* subtracting
-# the means.
+# the means. So we have to scale the mean RGB by this factor too.
 scale = 0.017
 
 coreml_model = coremltools.converters.caffe.convert(

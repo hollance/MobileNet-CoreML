@@ -1,5 +1,6 @@
 import UIKit
 import Vision
+import VideoToolbox
 
 class ViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
@@ -10,22 +11,30 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let image = UIImage(named: "cat224x224")!
+    let image = UIImage(named: "cat.jpg")!
     imageView.image = image
 
-    //predictUsingCoreML(image: image)
-    predictUsingVision(image: image)
+    predictUsingCoreML(image: image)
+    //predictUsingVision(image: image)
   }
 
   /*
    This uses the Core ML-generated MobileNet class directly.
    Downside of this method is that we need to convert the UIImage to a
-   CVPixelBuffer object ourselves.
+   CVPixelBuffer object ourselves. Core ML does not resize the image for
+   you, so it needs to be 224x224 because that's what the model expects.
    */
   func predictUsingCoreML(image: UIImage) {
-    if let prediction = try? model.prediction(data: image.pixelBuffer()) {
+    if let pixelBuffer = image.pixelBuffer(width: 224, height: 224),
+       let prediction = try? model.prediction(data: pixelBuffer) {
       let top5 = top(5, prediction.prob)
       show(results: top5)
+
+      // This is just to test that the CVPixelBuffer conversion works OK.
+      // It should have resized the image to a square 224x224 pixels.
+      var imoog: CGImage?
+      VTCreateCGImageFromCVPixelBuffer(pixelBuffer, nil, &imoog)
+      imageView.image = UIImage(cgImage: imoog!)
     }
   }
 

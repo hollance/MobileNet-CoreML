@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BD1BA321EE96463003DD324 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BD1BA311EE96432003DD324 /* cat.jpg */; };
 		7BDDAE291EE7033600CF05C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDAE281EE7033600CF05C3 /* AppDelegate.swift */; };
 		7BDDAE2B1EE7033600CF05C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDAE2A1EE7033600CF05C3 /* ViewController.swift */; };
 		7BDDAE2E1EE7033600CF05C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDDAE2C1EE7033600CF05C3 /* Main.storyboard */; };
 		7BDDAE301EE7033600CF05C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BDDAE2F1EE7033600CF05C3 /* Assets.xcassets */; };
 		7BDDAE331EE7033600CF05C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDDAE311EE7033600CF05C3 /* LaunchScreen.storyboard */; };
-		7BDDAE401EE7077E00CF05C3 /* cat224x224.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BDDAE3F1EE7075C00CF05C3 /* cat224x224.png */; };
 		7BDDAE411EE7078800CF05C3 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDAE3B1EE706EB00CF05C3 /* MobileNet.mlmodel */; };
 		7BDDAE451EE71A3900CF05C3 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDAE441EE71A3900CF05C3 /* UIImage+CVPixelBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BD1BA311EE96432003DD324 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = SOURCE_ROOT; };
 		7BDDAE251EE7033600CF05C3 /* MobileNetCoreML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNetCoreML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDDAE281EE7033600CF05C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BDDAE2A1EE7033600CF05C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		7BDDAE341EE7033600CF05C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BDDAE3A1EE7035000CF05C3 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
 		7BDDAE3B1EE706EB00CF05C3 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = SOURCE_ROOT; };
-		7BDDAE3F1EE7075C00CF05C3 /* cat224x224.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat224x224.png; sourceTree = SOURCE_ROOT; };
 		7BDDAE441EE71A3900CF05C3 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +64,7 @@
 			children = (
 				7BDDAE281EE7033600CF05C3 /* AppDelegate.swift */,
 				7BDDAE2F1EE7033600CF05C3 /* Assets.xcassets */,
-				7BDDAE3F1EE7075C00CF05C3 /* cat224x224.png */,
+				7BD1BA311EE96432003DD324 /* cat.jpg */,
 				7BDDAE341EE7033600CF05C3 /* Info.plist */,
 				7BDDAE311EE7033600CF05C3 /* LaunchScreen.storyboard */,
 				7BDDAE2C1EE7033600CF05C3 /* Main.storyboard */,
@@ -133,8 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD1BA321EE96463003DD324 /* cat.jpg in Resources */,
 				7BDDAE331EE7033600CF05C3 /* LaunchScreen.storyboard in Resources */,
-				7BDDAE401EE7077E00CF05C3 /* cat224x224.png in Resources */,
 				7BDDAE301EE7033600CF05C3 /* Assets.xcassets in Resources */,
 				7BDDAE2E1EE7033600CF05C3 /* Main.storyboard in Resources */,
 			);
@@ -328,6 +328,7 @@
 				7BDDAE391EE7033600CF05C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
