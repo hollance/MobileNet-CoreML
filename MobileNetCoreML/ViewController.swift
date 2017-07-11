@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     let image = UIImage(named: "cat.jpg")!
     imageView.image = image
 
-    predictUsingCoreML(image: image)
-    //predictUsingVision(image: image)
+    //predictUsingCoreML(image: image)
+    predictUsingVision(image: image)
   }
 
   /*
@@ -58,6 +58,8 @@ class ViewController: UIViewController {
         self.show(results: top5)
       }
     }
+
+    request.imageCropAndScaleOption = .centerCrop
 
     let handler = VNImageRequestHandler(cgImage: image.cgImage!)
     try? handler.perform([request])
