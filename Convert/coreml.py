@@ -19,7 +19,7 @@ coreml_model = coremltools.converters.caffe.convert(
     ('mobilenet.caffemodel', 'mobilenet_deploy.prototxt'),
     image_input_names='data',
     is_bgr=True, image_scale=scale,
-    red_bias=123.68*scale, green_bias=116.78*scale, blue_bias=103.94*scale,
+    red_bias=-123.68*scale, green_bias=-116.78*scale, blue_bias=-103.94*scale,
     class_labels='synset_words.txt')
 
 coreml_model.author = 'Original paper: Andrew G. Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, Hartwig Adam. Caffe implementation: shicai'
