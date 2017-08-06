@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inception" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sk0-xb-6cc" userLabel="Video Preview">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byz-OG-fyj" userLabel="Results">
+                                <rect key="frame" x="0.0" y="407" width="320" height="73.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elapsed time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs6-Jp-lWQ">
+                                        <rect key="frame" x="20" y="50" width="280" height="14"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRf-OZ-rXK">
+                                        <rect key="frame" x="20" y="10" width="280" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Bs6-Jp-lWQ" secondAttribute="trailing" constant="20" id="17J-Mq-qgK"/>
+                                    <constraint firstItem="Bs6-Jp-lWQ" firstAttribute="leading" secondItem="byz-OG-fyj" secondAttribute="leading" constant="20" id="F7Y-Sb-Qpl"/>
+                                    <constraint firstItem="gRf-OZ-rXK" firstAttribute="top" secondItem="byz-OG-fyj" secondAttribute="top" constant="10" id="RnX-jL-bfa"/>
+                                    <constraint firstItem="gRf-OZ-rXK" firstAttribute="leading" secondItem="byz-OG-fyj" secondAttribute="leading" constant="20" id="gn4-FS-Du5"/>
+                                    <constraint firstItem="Bs6-Jp-lWQ" firstAttribute="top" secondItem="gRf-OZ-rXK" secondAttribute="bottom" constant="20" id="mTR-IB-efF"/>
+                                    <constraint firstAttribute="trailing" secondItem="gRf-OZ-rXK" secondAttribute="trailing" constant="20" id="tbR-AW-ZEB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bs6-Jp-lWQ" secondAttribute="bottom" constant="10" id="y6w-Pt-Qml"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Sk0-xb-6cc" secondAttribute="bottom" id="2M5-It-5f7"/>
+                            <constraint firstAttribute="trailing" secondItem="Sk0-xb-6cc" secondAttribute="trailing" id="5nx-ng-YI4"/>
+                            <constraint firstAttribute="bottom" secondItem="byz-OG-fyj" secondAttribute="bottom" id="F5G-Id-IJQ"/>
+                            <constraint firstItem="Sk0-xb-6cc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FoD-lo-BbZ"/>
+                            <constraint firstItem="byz-OG-fyj" firstAttribute="leading" secondItem="Sk0-xb-6cc" secondAttribute="leading" id="JKU-5B-ZAz"/>
+                            <constraint firstItem="Sk0-xb-6cc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NEY-1c-dYC"/>
+                            <constraint firstItem="byz-OG-fyj" firstAttribute="trailing" secondItem="Sk0-xb-6cc" secondAttribute="trailing" id="eRC-CD-K3E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="predictionLabel" destination="gRf-OZ-rXK" id="06w-Bv-AsP"/>
+                        <outlet property="timeLabel" destination="Bs6-Jp-lWQ" id="vJU-QR-vQ6"/>
+                        <outlet property="videoPreview" destination="Sk0-xb-6cc" id="EvY-Wg-geU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

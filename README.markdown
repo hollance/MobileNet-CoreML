@@ -4,9 +4,15 @@ This is the **MobileNet** neural network architecture from the paper [MobileNets
 
 This uses the pretrained weights from [shicai/MobileNet-Caffe](https://github.com/shicai/MobileNet-Caffe).
 
-To use this app, open **MobileNetCoreML.xcodeproj** in Xcode 9 and run it on a device with iOS 11 or on the simulator. Currently it just shows the prediction for a [cat picture](Screenshot.png). I'll add live video soon.
+There are two demo apps included:
 
-> Note: In the mean time check out [Forge](http://github.com/hollance/Forge), my neural net library for iOS 10 that  comes with a version of MobileNet that works on video.
+- **Cat Demo.** Shows the prediction for a cat picture. Open the project in Xcode 9 and run it on a device with iOS 11 or on the simulator. 
+
+- **Camera Demo.** Runs from a live video feed and performs a prediction as often as it can manage. (You'll need to run this app on a device, it won't work in the simulator.)
+
+![The cat demo app](Screenshot.png)
+
+> Note: Also check out [Forge](http://github.com/hollance/Forge), my neural net library for iOS 10 that comes with a version of MobileNet implemented in Metal.
 
 ## Converting the weights
 
