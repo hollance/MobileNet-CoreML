@@ -6,8 +6,8 @@ extension UIImage {
     let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue,
                  kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue]
     let status = CVPixelBufferCreate(kCFAllocatorDefault,
-                                     Int(width),
-                                     Int(height),
+                                     width,
+                                     height,
                                      kCVPixelFormatType_32ARGB,
                                      attrs as CFDictionary,
                                      &maybePixelBuffer)
@@ -20,8 +20,8 @@ extension UIImage {
     let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer)
 
     guard let context = CGContext(data: pixelData,
-                                  width: Int(width),
-                                  height: Int(height),
+                                  width: width,
+                                  height: height,
                                   bitsPerComponent: 8,
                                   bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer),
                                   space: CGColorSpaceCreateDeviceRGB(),

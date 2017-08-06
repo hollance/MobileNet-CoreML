@@ -26,8 +26,7 @@
 		7BDDAE2F1EE7033600CF05C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BDDAE321EE7033600CF05C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BDDAE341EE7033600CF05C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BDDAE3A1EE7035000CF05C3 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
-		7BDDAE3B1EE706EB00CF05C3 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = SOURCE_ROOT; };
+		7BDDAE3B1EE706EB00CF05C3 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../MobileNet.mlmodel; sourceTree = SOURCE_ROOT; };
 		7BDDAE441EE71A3900CF05C3 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +44,6 @@
 		7BDDAE1C1EE7033600CF05C3 = {
 			isa = PBXGroup;
 			children = (
-				7BDDAE3A1EE7035000CF05C3 /* README.markdown */,
 				7BDDAE271EE7033600CF05C3 /* MobileNetCoreML */,
 				7BDDAE261EE7033600CF05C3 /* Products */,
 			);
