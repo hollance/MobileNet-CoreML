@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B1CEBA22156A63F00BB01C9 /* CVPixelBuffer+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1CEBA12156A63F00BB01C9 /* CVPixelBuffer+Helpers.swift */; };
 		7B47D4681F3767250015678E /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7B47D4671F3767250015678E /* MobileNet.mlmodel */; };
 		7BF035A81EF053B400E537BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF035A71EF053B400E537BE /* AppDelegate.swift */; };
 		7BF035AA1EF053B400E537BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF035A91EF053B400E537BE /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B1CEBA12156A63F00BB01C9 /* CVPixelBuffer+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Helpers.swift"; sourceTree = "<group>"; };
 		7B47D4671F3767250015678E /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MobileNet.mlmodel; path = ../../MobileNet.mlmodel; sourceTree = "<group>"; };
 		7BF035A41EF053B400E537BE /* MobileNetCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileNetCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF035A71EF053B400E537BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				7BF035A71EF053B400E537BE /* AppDelegate.swift */,
 				7BF035AE1EF053B400E537BE /* Assets.xcassets */,
+				7B1CEBA12156A63F00BB01C9 /* CVPixelBuffer+Helpers.swift */,
 				7BF035B31EF053B400E537BE /* Info.plist */,
 				7BF035AB1EF053B400E537BE /* Main.storyboard */,
 				7B47D4671F3767250015678E /* MobileNet.mlmodel */,
@@ -94,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = MachineThink;
 				TargetAttributes = {
 					7BF035A31EF053B400E537BE = {
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B47D4681F3767250015678E /* MobileNet.mlmodel in Sources */,
+				7B1CEBA22156A63F00BB01C9 /* CVPixelBuffer+Helpers.swift in Sources */,
 				7BF035BC1EF057F700E537BE /* VideoCapture.swift in Sources */,
 				7BF035AA1EF053B400E537BE /* ViewController.swift in Sources */,
 				7BF035A81EF053B400E537BE /* AppDelegate.swift in Sources */,
@@ -172,12 +176,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -227,12 +235,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -272,7 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.machinethink.MobileNetCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -286,7 +298,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.machinethink.MobileNetCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

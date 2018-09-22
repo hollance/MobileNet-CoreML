@@ -33,7 +33,7 @@ class ViewController: UIViewController {
       // This is just to test that the CVPixelBuffer conversion works OK.
       // It should have resized the image to a square 224x224 pixels.
       var imoog: CGImage?
-      VTCreateCGImageFromCVPixelBuffer(pixelBuffer, nil, &imoog)
+      VTCreateCGImageFromCVPixelBuffer(pixelBuffer, options: nil, imageOut: &imoog)
       imageView.image = UIImage(cgImage: imoog!)
     }
   }
